@@ -174,8 +174,8 @@ wandb
 
 *.zip
 
-_03_your_code
-_04_homeworks_solution
+#_03_your_code
+#_04_homeworks_solution
 
 
 ignore

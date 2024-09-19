@@ -2,6 +2,7 @@ import os
 import imageio.v2 as imageio
 import torch
 
+print(os.path.pardir)
 img_arr = imageio.imread(os.path.join(os.path.pardir, os.path.pardir, "_00_data", "a_image-dog", "bobby.jpg"))
 print(type(img_arr))
 print(img_arr.shape)

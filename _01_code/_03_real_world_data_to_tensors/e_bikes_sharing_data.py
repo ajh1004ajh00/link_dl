@@ -11,6 +11,7 @@ bikes_numpy = np.loadtxt(
   converters={
     1: lambda x: float(x[8:10])  # 2011-01-07 --> 07 --> 7.0
   }
+
 )
 bikes = torch.from_numpy(bikes_numpy)
 print(bikes.shape)
