@@ -15,7 +15,7 @@ class MyLinear(nn.Module):
 if __name__ == "__main__":
   my_linear = MyLinear(in_features=4, out_features=3)
   sample_input = torch.randn(4)
-  output = my_linear(sample_input)
+  output = my_linear(1, sample_input)
 
   print("input.shape:", sample_input.shape)
   print("my_linear.weight.shape:", my_linear.weight.shape)
