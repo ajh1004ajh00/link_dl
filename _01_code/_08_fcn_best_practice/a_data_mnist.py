@@ -43,6 +43,8 @@ mnist_train = datasets.MNIST(data_path, train=True, download=False, transform=tr
 mnist_train, mnist_validation = random_split(mnist_train, [55_000, 5_000])
 mnist_test = datasets.MNIST(data_path, train=False, download=False, transform=transforms.ToTensor())
 
+#print(type(mnist_train))
+
 print(len(mnist_train), len(mnist_validation), len(mnist_test))  # >>> 55000 5000 10000
 
 img_t, _ = mnist_train[0]
