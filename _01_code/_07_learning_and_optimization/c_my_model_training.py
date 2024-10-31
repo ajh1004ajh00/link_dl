@@ -74,11 +74,8 @@ def training_loop(model, optimizer, train_data_loader, validation_data_loader):
       f"Training loss {loss_train / num_trains:.4f}, "
       f"Validation loss {loss_validation / num_validations:.4f}"
     )
-
-
 if __name__ == "__main__":
   train_data_loader, validation_data_loader = get_data()
-
   linear_model, optimizer = get_model_and_optimizer()
 
   print("#" * 50, 1)
